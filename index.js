@@ -44,7 +44,7 @@ io.sockets.on("Unconnection", function (socket) {
     nombreDeConnexion--;
     socket.emit('jeSuisDeconnecte', nombreDeConnexion)
 })
-//Port pour la connexion
+//Port pour la connexion = 3000
 http.listen(3000, function () {
-    //console.log("connect")
+    console.log("Connecté au port 3000")
 })

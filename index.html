@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site éléction</title>
+    <title>Site de vote pour les éléctions</title>
 </head>
 
 <body>
@@ -40,19 +40,15 @@
         })
 
         socket.on("oui", function (antoineVote) {
-            //console.log(antoineVote); // Ca fonctionne, on récupère la variable.
             document.getElementById("AntoineVote").innerHTML = antoineVote;
         })
         socket.on("oui1", function (leonieVote) {
-            //console.log(leonieVote); // Ca fonctionne, on récupère la variable.
             document.getElementById("LeonieVote").innerHTML = leonieVote;
         })
         socket.on("oui2", function (sorayaVote) {
-            //console.log(SorayaVote); // Ca fonctionne, on récupère la variable.
             document.getElementById("SorayaVote").innerHTML = sorayaVote;
         })
         socket.on("oui3", function (maximeVote) {
-            //console.log(maximeVote); // Ca fonctionne, on récupère la variable.
             document.getElementById("MaximeVote").innerHTML = maximeVote;
         })
         socket.on("jeSuisConnecte", function (nombreCo) {
